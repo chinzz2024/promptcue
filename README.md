@@ -48,7 +48,7 @@ The core of this project is a RESTful Flask service that allows users to interac
 └── README.md         # Project documentation
 
 
-⚙️ Setup & Installation
+## ⚙️ Setup & Installation
 1. Prerequisites
 
     Python 3.8 or higher
@@ -71,7 +71,7 @@ pip install -r requirements.txt
 
 
 
-▶️ Running the Service
+## ▶️ Running the Service
 1. Set the API Key
 
 Set your Groq API key as an environment variable:
@@ -86,7 +86,7 @@ The server will be accessible at:
 http://127.0.0.1:5001/chat
 
 
-🧪 Testing the API
+## 🧪 Testing the API
 
 You can test the chat service using curl:
 ✅ Test 1: Use Llama 3 (8B) Model
@@ -104,5 +104,5 @@ curl -X POST http://127.0.0.1:5001/chat?model=llama3-70b \
 You will receive a JSON response with the model’s reply. Each request is logged in logs.json.
 
 
-💬 Author
+## 💬 Author
 Pranav Mohan
