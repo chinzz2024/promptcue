@@ -46,17 +46,20 @@ The core of this project is a RESTful Flask service that allows users to interac
 ├── requirements.txt  # Python dependencies
 ├── logs.json         # Sample log file (auto-generated)
 └── README.md         # Project documentation
+```
 
+---
 
 ## ⚙️ Setup & Installation
-1. Prerequisites
 
-    Python 3.8 or higher
+### 1. Prerequisites
 
-    Valid Groq API Key
+- Python 3.8 or higher  
+- Valid Groq API Key
 
-2. Clone & Set Up
+### 2. Clone & Set Up
 
+```bash
 # Clone this repository
 git clone <your-repo-url>
 cd <your-project-directory>
@@ -64,45 +67,59 @@ cd <your-project-directory>
 # Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3. Install Dependencies
+### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-
+---
 
 ## ▶️ Running the Service
-1. Set the API Key
 
-Set your Groq API key as an environment variable:
+### 1. Set the API Key
 
+```bash
 export GROQ_API_KEY="your_groq_api_key_here"
+```
 
-2. Start the Flask Server
+### 2. Start the Flask Server
 
+```bash
 python app.py
+```
 
-The server will be accessible at:
+The server will be accessible at:  
 http://127.0.0.1:5001/chat
 
+---
 
 ## 🧪 Testing the API
 
-You can test the chat service using curl:
-✅ Test 1: Use Llama 3 (8B) Model
+You can test the chat service using `curl`:
 
+### ✅ Test 1: Use Llama 3 (8B) Model
+
+```bash
 curl -X POST http://127.0.0.1:5001/chat?model=llama3-8b \
 -H "Content-Type: application/json" \
 -d '{"prompt": "What are three fun facts about the ocean?"}'
+```
 
-✅ Test 2: Use Llama 3 (70B) Model
+### ✅ Test 2: Use Llama 3 (70B) Model
 
+```bash
 curl -X POST http://127.0.0.1:5001/chat?model=llama3-70b \
 -H "Content-Type: application/json" \
 -d '{"prompt": "Write a short story about a robot who discovers music."}'
+```
 
-You will receive a JSON response with the model’s reply. Each request is logged in logs.json.
+You will receive a JSON response with the model’s reply. Each request is logged in `logs.json`.
 
+---
 
 ## 💬 Author
-Pranav Mohan
+
+**Pranav Mohan**  
