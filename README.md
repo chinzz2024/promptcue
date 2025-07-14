@@ -61,8 +61,8 @@ The core of this project is a RESTful Flask service that allows users to interac
 
 ```bash
 # Clone this repository
-git clone <your-repo-url>
-cd <your-project-directory>
+git clone <https://github.com/chinzz2024/promptcue.git>
+cd <promptcue-assignment>
 
 # Create and activate a virtual environment
 python3 -m venv venv
